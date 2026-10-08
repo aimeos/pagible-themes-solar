@@ -51,11 +51,8 @@ class SolarDemoTest extends ThemeTestAbstract
         $response->assertSee( 'theme-solar', false );
         $response->assertSee( '"@type": "HomeAndConstructionBusiness"', false );
         $response->assertSee( '"name": "Kelheim"', false );
-        $response->assertSee( '"contactType": "emergency"', false );
         $response->assertSee( '"dayOfWeek": "https://schema.org/Friday"', false );
-        $response->assertSee( 'class="emergency"', false );
-        $response->assertDontSee( '24/7 emergency service' );
-        $response->assertSee( 'href="tel:+499415893499"', false );
+        $response->assertDontSee( 'class="emergency"', false );
         $response->assertSee( 'class="call-button" href="tel:+499415893410"', false );
         $response->assertSee( 'Donaustauf solar and battery' );
         $response->assertSee( 'Most chosen' );

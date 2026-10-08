@@ -148,7 +148,7 @@ class SolarDemo extends AbstractDemo
             ]],
             ['id' => Utils::uid(), 'type' => 'map', 'group' => 'main', 'data' => [
                 'title' => 'Our office',
-                'text' => "**Sonnwerk Energie**\nSonnenstraße 12 · 93053 Regensburg\n\n**Call**\n0941 5893 410 · Monday to Thursday 08:00–17:00, Friday 08:00–13:00\n\n**Fault service**\n0941 5893 499 · for heat pump and battery faults\n\n**Email**\ninfo@sonnwerk.example\n\nWe work in Regensburg, Neutraubling, Regenstauf, Donaustauf, Kelheim and Straubing.",
+                'text' => "**Sonnwerk Energie**\nSonnenstraße 12 · 93053 Regensburg\n\n**Call**\n0941 5893 410 · Monday to Thursday 08:00–17:00, Friday 08:00–13:00\n\n**Email**\ninfo@sonnwerk.example\n\nWe work in Regensburg, Neutraubling, Regenstauf, Donaustauf, Kelheim and Straubing.",
                 'location' => [
                     'latitude' => 49.0134,
                     'longitude' => 12.1016,
@@ -341,7 +341,7 @@ class SolarDemo extends AbstractDemo
             ['title' => 'Sonnwerk Energie', 'text' => "Solar systems, battery storage and heat pumps for homes and businesses in Regensburg and Eastern Bavaria since 2011."],
             ['title' => 'Services', 'text' => "- [Solar systems](/solar-systems)\n- [Battery storage](/battery-storage)\n- [Heat pumps](/heat-pumps)\n- [Wallboxes](/wallboxes)"],
             ['title' => 'Company', 'text' => "- [Our projects](/projects)\n- [About us](/about)\n- [Imprint](/imprint)"],
-            ['title' => 'Contact', 'text' => "Sonnenstraße 12\n93053 Regensburg\n\n0941 5893 410\nFault service 0941 5893 499\n[Book a free consultation](/contact)"],
+            ['title' => 'Contact', 'text' => "Sonnenstraße 12\n93053 Regensburg\n\n0941 5893 410\n[Book a free consultation](/contact)"],
         ]] );
     }
 
@@ -381,8 +381,6 @@ class SolarDemo extends AbstractDemo
                     'locality' => 'Regensburg',
                     'country' => 'DE',
                     'telephone' => '+49 941 5893 410',
-                    'emergency-phone' => '+49 941 5893 499',
-                    'emergency' => false,
                     'email' => 'info@sonnwerk.example',
                     'area' => 'Regensburg, Neutraubling, Regenstauf, Donaustauf, Kelheim, Straubing',
                     'price-range' => '€€',

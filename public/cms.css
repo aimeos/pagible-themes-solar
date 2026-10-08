@@ -109,37 +109,6 @@ body {
     text-decoration-color: var(--pico-contrast-hover);
 }
 
-.emergency {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 0.25rem 0.75rem;
-    padding: 0.375rem 1rem;
-    color: var(--pico-secondary-inverse);
-    background-color: var(--pico-secondary);
-    font-size: calc(var(--pico-font-size) * 0.8);
-    font-weight: 700;
-}
-
-.emergency::before {
-    content: "";
-    width: 1rem;
-    height: 1rem;
-    background-color: currentColor;
-    -webkit-mask: var(--solar-sun) center / contain no-repeat;
-    mask: var(--solar-sun) center / contain no-repeat;
-}
-
-.emergency a,
-.emergency a:visited,
-.emergency a:hover {
-    color: inherit;
-    text-decoration: underline;
-    text-decoration-color: currentColor;
-    text-decoration-thickness: 0.1em;
-}
-
 .skip-link {
     position: absolute;
     top: -100%;

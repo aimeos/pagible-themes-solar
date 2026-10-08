@@ -35,8 +35,6 @@ The **Business** settings in the page config add a local business JSON-LD to eve
 |-------|-------------|
 | Business type | schema.org type: `HomeAndConstructionBusiness`, `Electrician` or `HVACBusiness` |
 | Name, address, telephone, email | Company details, the telephone is also used by the call button |
-| Emergency number | Shown in a bar at the top of every page and added as emergency contact point |
-| 24/7 service | Marks the emergency number as available around the clock |
 | Places served | Comma separated towns and regions, rendered as `areaServed` |
 | Price range | Price level, e.g. `€€` |
 | Opening hours | Opening and closing time per day of the week |
@@ -70,7 +68,7 @@ php artisan cms:demo --theme=solar
 ├── src/
 │   └── SolarServiceProvider.php
 ├── public/              CSS and admin translations published to public/vendor/cms/solar/
-│   ├── cms.css          Base styles, header, emergency bar, footer and call button
+│   ├── cms.css          Base styles, header, footer and call button
 │   ├── i18n/            Admin translations of the config fields
 │   └── *.css            Content element and layout styles
 ├── tests/

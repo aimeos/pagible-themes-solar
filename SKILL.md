@@ -22,7 +22,6 @@ Use a bright, optimistic layout that makes homeowners and businesses trust the c
 
 ## Components
 
-- Service bar: the fault service number from the `business` config at the top of every page.
 - Hero: a solar roof, battery or heat pump photo as background with a short headline, a sun yellow tag line, a sloped edge at the bottom and a "Get a free consultation" action.
 - Services: cards with a photo, a short text and a link to the service page.
 - Figures and badges: cards in the `figures` layout for installed kWp, systems, self-sufficiency and reviews, and in the `badges` layout for certifications.
@@ -30,7 +29,7 @@ Use a bright, optimistic layout that makes homeowners and businesses trust the c
 - Process: a horizontal timeline from the consultation and site survey to the grid connection.
 - Projects: `blog` pages below the projects page, each with an article, key figures, a before/after comparison of same-sized photos, a vertical step timeline and a slideshow.
 - Contact: a contact form with a project type select, postcode, annual consumption and attachments for photos of the roof, meter cabinet and boiler room.
-- Business details: the `business` config adds the local business JSON-LD, the fault service contact point and the call button for phones.
+- Business details: the `business` config adds the local business JSON-LD and the call button for phones.
 
 ## Accessibility
 

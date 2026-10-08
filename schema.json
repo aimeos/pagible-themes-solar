@@ -88,16 +88,6 @@
                     "hint": "Phone number in international format, also used by the call button",
                     "required": true
                 },
-                "emergency-phone": {
-                    "type": "string",
-                    "label": "Emergency number",
-                    "hint": "Phone number for emergencies, shown at the top of every page"
-                },
-                "emergency": {
-                    "type": "switch",
-                    "label": "24/7 service",
-                    "hint": "Emergency service is available around the clock"
-                },
                 "email": {
                     "type": "string",
                     "hint": "Email address for enquiries"

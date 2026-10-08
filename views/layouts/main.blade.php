@@ -114,21 +114,6 @@
                 @if($business->{'price-range'} ?? null)
                 "priceRange": {!! cmsjson($business->{'price-range'}) !!},
                 @endif
-                @if($business->{'emergency-phone'} ?? null)
-                "contactPoint": {
-                    "@@type": "ContactPoint",
-                    "contactType": "emergency",
-                    @if($business->emergency ?? false)
-                    "hoursAvailable": {
-                        "@@type": "OpeningHoursSpecification",
-                        "dayOfWeek": ["https://schema.org/Monday", "https://schema.org/Tuesday", "https://schema.org/Wednesday", "https://schema.org/Thursday", "https://schema.org/Friday", "https://schema.org/Saturday", "https://schema.org/Sunday"],
-                        "opens": "00:00",
-                        "closes": "23:59"
-                    },
-                    @endif
-                    "telephone": {!! cmsjson($business->{'emergency-phone'}) !!}
-                },
-                @endif
                 "telephone": {!! cmsjson($business->telephone ?? '') !!}
             }
             @endif
@@ -154,12 +139,6 @@
             </article>
         </dialog>
         <header>
-            @if($emergency = preg_replace('/[^+0-9]/', '', (string) ($business->{'emergency-phone'} ?? '')))
-                <div class="emergency">
-                    {{ ($business->emergency ?? false) ? __('24/7 emergency service') : __('Emergency') }}
-                    <a href="tel:{{ $emergency }}">{{ $business->{'emergency-phone'} }}</a>
-                </div>
-            @endif
             <nav role="navigation" aria-label="{{ __('Main navigation') }}">
                 <ul>
                     <li class="sidebar-open show">
